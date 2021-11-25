@@ -28,3 +28,6 @@ main {
     gap: 50px;
 }
 
+#answer {
+    display: none;
+}
