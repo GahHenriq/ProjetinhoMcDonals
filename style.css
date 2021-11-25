@@ -20,6 +20,11 @@ main {
     gap: 30px;
 }
 
+#resposta {
+    display: none;
+}
+
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -28,6 +33,4 @@ main {
     gap: 50px;
 }
 
-#answer {
-    display: none;
-}
+
