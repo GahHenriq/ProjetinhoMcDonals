@@ -1,4 +1,4 @@
-for (var a=[],i=0;i<87;++i) a[i]=i;
+for (var a=[],i=0;i<86;++i) a[i]=i;
 
 function shuffle(array) {
   var tmp, current, top = array.length;
@@ -10,8 +10,9 @@ function shuffle(array) {
   }
   return array;
 }
-a = shuffle(a);
 
+a = shuffle(a);
+console.log(a);
 let txt_resposta = document.getElementById("resposta");
 let cont = 0;
 let botao_pergunta = document.getElementById("nextButton");
@@ -24,7 +25,7 @@ botao_pergunta.onclick = () => {
     let text_pergunta = document.getElementById("texto");
     let text_resposta = document.getElementById("resposta");
 
-
+    console.log(a[cont]);
     text_pergunta.innerHTML = pergunta[a[cont]];
     text_resposta .innerHTML =  resposta[a[cont]];
     cont++;
